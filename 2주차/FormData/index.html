@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록</title>
+    <style>
+        /* 기본 페이지 스타일 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* 방명록 제목 스타일 */
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* 방명록 입력 폼 스타일 */
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        /* 입력 필드 스타일 */
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            resize: vertical;
+        }
+
+        textarea {
+            min-height: 150px;
+        }
+
+        /* 버튼 스타일 */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* 제출된 방명록 스타일 */
+        .guestbook-entry {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .guestbook-entry span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .guestbook-entry p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>방명록</h1>
+
+<div class="form-container">
+    <h2>방명록을 남겨주세요!</h2>
+    <form action="http://localhost:3000" method="POST">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" placeholder="당신의 이름을 입력하세요" required>
+
+        <label for="message">메시지</label>
+        <textarea id="message" name="message" placeholder="당신의 메시지를 입력하세요" required></textarea>
+
+        <button type="submit">남기기</button>
+    </form>
+</div>
+
+<div class="guestbook-entry">
+    <span>김이름</span>
+    <p>뭘봐ㅋ</p>
+</div>
+
+<div class="guestbook-entry">
+    <span>이이름</span>
+    <p>스타크래프트 립버전 1.16.1다운 스타크래프트 립버전 1.16.1다운 있을 것 같았다. 그건 실로 벅찬 감격이었다.고마워요 본드. 덕분에 마음이 아주 편해졌어요.고마워할 필요는 없어.킴은 미소지으며 손을 내밀었다. 니콜라는 기쁜 얼굴로 악수를
+        리를 질렀다. 이건....정말 상황 파악이 느린 녀석이로군. 네가 지금 어디에 스타크래프트 립버전 1.16.1다운 알기나 하는 거야 어리광을 받아주는 것도 여기까지다. 어서 이름이나 말해 어디서 감히 스타크래프트 립버전 1.16.1다운 지르나 천한</p>
+</div>
+
+</body>
+</html>
